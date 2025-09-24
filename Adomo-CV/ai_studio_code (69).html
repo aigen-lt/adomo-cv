@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aušra Mikulskienė CV</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+        :root {
+            --accent-color: #2596be; 
+            --dark-color: #2c3e50;
+            --text-color: #333333;
+            --gray-color: #555555;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px; /* PADIDINTAS BAZINIS ŠRIFTAS */
+            line-height: 1.7; /* Pakeistas, kad atitiktų didesnį šriftą */
+            color: var(--text-color);
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            -webkit-print-color-adjust: exact;
+            color-adjust: exact;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 50px 60px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
+        
+        /* === VIRŠUTINĖ DALIS (HEADER) === */
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .header-photo {
+            width: 150px; /* Padidinta */
+            height: 150px; /* Padidinta */
+            border-radius: 50%;
+            margin-right: 40px;
+            object-fit: cover;
+        }
+
+        .header-info h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 3em; /* Padidinta */
+            font-weight: 700;
+            margin: 0;
+            color: var(--dark-color);
+            line-height: 1.1;
+        }
+
+        .header-info h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5em; /* Padidinta */
+            font-weight: 400;
+            margin: 10px 0 0 0;
+            color: var(--accent-color);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 25px;
+            margin-top: 20px;
+            font-size: 1em; /* Padidinta */
+        }
+
+        .contact-info a {
+            color: var(--gray-color);
+            text-decoration: none;
+        }
+
+        /* === BENDRA SEKCIJŲ STRUKTŪRA === */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.6em; /* Padidinta */
+            font-weight: 600;
+            color: var(--dark-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* === PATIRTIS IR IŠSILAVINIMAS === */
+        .entry {
+            margin-bottom: 25px;
+        }
+        
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+        }
+
+        .entry h3 {
+            font-size: 1.25em; /* Padidinta */
+            font-weight: 600;
+            margin: 0;
+            color: var(--text-color);
+        }
+        
+        .entry .date {
+            font-weight: 500;
+            color: var(--gray-color);
+            font-size: 1em; /* Padidinta */
+            white-space: nowrap;
+            padding-left: 15px;
+        }
+
+        .entry .company {
+            font-style: italic;
+            color: var(--gray-color);
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .entry ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .entry ul li {
+            margin-bottom: 5px;
+        }
+
+        /* === KITOS SEKCIJOS === */
+        p {
+            margin: 0 0 10px 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        strong {
+           color: var(--dark-color);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="https://mikulskis.lt/nuotraukos/IMG_20250915_202532.jpg" alt="Aušra Mikulskienė" class="header-photo">
+            <div class="header-info">
+                <h1>Aušra MIKULSKIENĖ</h1>
+                <h2>Apskaitininkė / Administracijos darbuotojas</h2>
+                <div class="contact-info">
+                    <span>Panevėžys</span>
+                    <span>&bull;</span>
+                    <a href="tel:+37067506860">+370 675 06860</a>
+                    <span>&bull;</span>
+                    <a href="mailto:mikulskiene.ausra@gmail.com">mikulskiene.ausra@gmail.com</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="section">
+                <h2 class="section-title">Asmeninės savybės</h2>
+                <p>Esu <strong>darbšti, disciplinuota</strong> ir <strong>atsakinga</strong> specialistė, turinti <strong>puikius bendravimo įgūdžius</strong>. Gebu dirbti tiek <strong>savarankiškai, tiek komandoje</strong>, esu <strong>lojali</strong> ir siekiu užduotis atlikti <strong>laiku bei kruopščiai</strong>. Darbe vertinu draugiškus santykius, mandagumą ir punktualumą.</p>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Darbo patirtis</h2>
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3>Apskaitininkė</h3>
+                        <span class="date">2020 m. – 2024 m.</span>
+                    </div>
+                    <p class="company">MB Consularis</p>
+                    <ul>
+                        <li>Pirminių dokumentų (sąskaitų faktūrų, banko išrašų, kasos dokumentų) suvedimas į duomenų bazę ir jų sutikrinimas.</li>
+                        <li><strong>Personalo dokumentacijos tvarkymas</strong>: priėmimo-atleidimo sutarčių ruošimas, <strong>darbo užmokesčio ir atostogų skaičiavimas</strong>.</li>
+                        <li>Ataskaitų teikimas „Sodrai“.</li>
+                        <li>Įmonės buhalterinės apskaitos tvarkymas su <strong>„Rivilė“ programa</strong>.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <h3>Pardavėja-konsultantė</h3>
+                        <span class="date">2017 m. – 2019 m.</span>
+                    </div>
+                    <p class="company">UAB Pauluma; AA Baldų galerija</p>
+                    <ul>
+                        <li><strong>Klientų konsultavimas</strong>, pagalba išsirenkant tinkamiausias prekes.</li>
+                        <li>Ekspozicijos priežiūra, pardavimo sąskaitų išrašymas, darbo grafikų sudarymas.</li>
+                        <li>Darbas kasos aparatu ir atsiskaitymų priežiūra.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                     <div class="entry-header">
+                        <h3>Vyr. kasininkė (Administracijos darbuotojas)</h3>
+                        <span class="date">2002 m. – 2016 m.</span>
+                    </div>
+                    <p class="company">UAB Maxima LT</p>
+                    <ul>
+                        <li>Atsakomybė už <strong>kasdienes grynųjų pinigų operacijas</strong> ir kasos dokumentų apskaitą.</li>
+                        <li>Efektyvaus kasų darbo organizavimas, <strong>konfliktų sprendimas</strong>.</li>
+                        <li><strong>Kasininkių darbo administravimas</strong>, grafikų sudarymas ir darbo kontrolė.</li>
+                    </ul>
+                </div>
+                <div class="entry">
+                     <div class="entry-header">
+                        <h3>Vyr. kasininkė-pardavėja</h3>
+                        <span class="date">1988 m. – 2002 m.</span>
+                    </div>
+                    <p class="company">Parduotuvė "Puriena"</p>
+                </div>
+            </section>
+
+            <div class="grid-container">
+                <section class="section">
+                    <h2 class="section-title">Išsilavinimas</h2>
+                     <div class="entry">
+                        <div class="entry-header">
+                            <h3>Kasininkas-kontrolierius</h3>
+                             <span class="date">1985 m.</span>
+                        </div>
+                        <p class="company">Panevėžio Prekybos valdybos PTM (Gautas diplomas su <strong>pagyrimu</strong>)</p>
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <h2 class="section-title">Kursai</h2>
+                     <div class="entry">
+                        <div class="entry-header">
+                            <h3>Buhalterinės apskaitos pagrindai</h3>
+                            <span class="date">2016 m.</span>
+                        </div>
+                        <p class="company">60 ak. val.</p>
+                    </div>
+                    <div class="entry">
+                        <div class="entry-header">
+                            <h3>Buhalterinės apskaitos sistema RIVILĖ</h3>
+                            <span class="date">2016 m.</span>
+                        </div>
+                        <p class="company">16 ak. val.</p>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="grid-container">
+                <section class="section">
+                    <h2 class="section-title">Įgūdžiai</h2>
+                    <p><b>Kompiuterinės žinios:</b> MS Excel, MS Word</p>
+                    <p><b>Apskaitos programos:</b> BOS, RIVILĖ</p>
+                    <p><b>Vairuotojo pažymėjimas:</b> B kategorija (nuo 1990 m.)</p>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Kalbos</h2>
+                    <p><b>Lietuvių kalba:</b> Gimtoji</p>
+                    <p><b>Rusų kalba:</b> Geros kalbėjimo ir rašymo žinios</p>
+                    <p><b>Anglų kalba:</b> Pradinės žinios</p>
+                </section>
+            </div>
+
+            <section class="section">
+                <h2 class="section-title">Pomėgiai</h2>
+                <p>Knygos yra neatsiejama mano gyvenimo dalis. Mėgstu <strong>skaityti</strong>, lankytis knygynuose, knygų mugėse, <strong>atrasti naujų autorių</strong>. Man svarbi kultūrinė aplinka – dažnai <strong>dalyvauju renginiuose</strong>, kurie praturtina mano žinias ir įkvepia kasdienybę.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
